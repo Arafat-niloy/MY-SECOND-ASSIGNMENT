@@ -102,7 +102,421 @@ font-weight: 400;
 }
 
 
+/* banner2 section */
+.banner2_section{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* align-items: center; */
+    text-align: center;
+
+    margin-top: 120px;
+    gap: 40px;
+
+}
+
+.banner2_left{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.banner2_title{
+    font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+}
+
+
+.banner2_title span{
+    color: var(--primary-color);
+}
+
+.banner2_info{
+    color: var(--secondary-color);
+    font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+/* width: 888px; */
+margin-bottom: 30px;
+padding: 10px;
+}
+
+.banner2_card_items{
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card_info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    justify-content: space-between;
+}
+
+.card_details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.card_name{
+    color: rgb(17, 17, 17);
+font-family: Inter;
+font-size: 22px;
+font-weight: 500;
+}
+
+.card_price{
+    color: rgb(17, 17, 17);
+font-family: Inter;
+font-size: 22px;
+font-weight: 700;
+}
+
+
+.card_btn{
+    background-color: var(--primary-color);
+    color: white;
+
+    font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+border: none;
+/* padding: 26px 50px; */
+
+height: 50px;
+}
+
+
+.banner2_right{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px 20px;
+
+}
+
+/* banner 3 section */
+.banner3_section{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 60px;
+
+    margin-top: 212px;
+    /* width: 150px; */
+}
+
+.banner3_section>*{
+    flex: 1;
+}
+
+.banner3_flowerplant{
+    /* margin-top: 3px;
+    margin-bottom: 3px; */
+
+    border: 1px solid;
+
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+}
+.flowerplant_title{
+    color: rgb(0, 0, 0);
+font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+}
+
+.flowerplant_point ul{
+    padding-left: 40px;
+}
+
+.flowerplant_points_list{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+}
+
+/* .flowerplant_point ul li:nth-child(2){
+    margin: 20px auto;
+} */
+
+.banner3_image{
+    position: relative;
+}
+.banner3_image img:nth-child(2){
+
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: -100px;
+    right: -82px;
+    z-index: 20;
+}
+
+
+
+
+.banner4{
+    margin: 128px 0;
+}
+
+.banner4_info{
+    text-align: center;
+    margin-bottom: 121px;
+
+}
+
+.banner4_title span{
+    color: var(--primary-color);
+}
+
+.banner4_title{
+    color: rgb(0, 0, 0);
+font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+
+margin-bottom: 16px;
+}
+
+.banner4_description{
+
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+border: 1px solid;
+/* width: 880px; */
+
+/* margin: 0px px; */
+}
+
+
+.banner4_image_container{
+    display: flex;
+    gap: 28px;
+
+}
+
+.banner4_image_container1{
+    width: 30%;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner4_image1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(./assets/deal-bloom.png);
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    text-align: center;
+    color: white;
+
+    /* padding: 65px 48px 114px 49px; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 250px;
+}
+
+.banner4_image_title{
+font-family: Noto Serif;
+font-size: 20px;
+font-weight: 700;
+margin-bottom: 18px;
+}
+
+banner4_image_shopnow{
+font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+}
+
+.banner4_image2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(./assets/deal-ana.png);
+    text-align: center;
+    color: white;
+
+    /* padding: 65px 48px 114px 49px; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    height: 250px;
+}
+
+.banner4_image_container2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(./assets/deal-zabo.png);
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    height: 512px;
+    
+}
+
+
+.banner5_section{
+    background-image: url(./assets/news-letter-bg.png);
+    width: 100%;
+    height: 533px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.banner5_title{
+    font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+color: rgb(255, 255, 255);
+
+text-align: center;
+}
+
+.banner5_input_section input{
+width: 644px;
+height: 50px;
+
+padding: 8px 20px;
+
+}
+
+.banner5_btn{
+width: 186px;
+height: 50px;
+background-color: var(--primary-color);
+color: white;
+border: none;
+}
+
+
+.footer_contaier{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 110px;
+
+    margin: 50px 160px;
+
+    /* align-items: center; */
+}
+
+.part1 img{
+    width: 135px;
+
+    margin-bottom: 16px;
+    
+}
+
+.part4_social_media{
+    display: flex;
+    gap: 35px;
+}
+
+.part4_social_media img{
+    width: 36px;
+    height: 36px;
+}
+
+.part1_info{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+}
+
+.part2_navbar_list{
+    list-style: none;
+    color: var(--secondary-color);
+
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+}
+
+.part2_navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.part3_navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.footer_contaier a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:576px){
+
+.nav_item_list:nth-child(1),
+.nav_item_list:nth-child(2),
+.nav_item_list:nth-child(3){
+
+    display: none;
+}
+
+
+
    .banner1_right img{
     width: 100%;
     border: 1px solid;
@@ -119,8 +533,79 @@ font-weight: 400;
     justify-content: space-between;
 }
 
+.banner2_right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px;
+
+    
 
 }
+
+
+
+.banner3_section{
+    
+    
+   flex-direction: column;
+    /* width: 150px; */
+}
+
+
+.banner3_image img:nth-child(2){
+
+    display: none;
+}
+
+
+.banner5_input_section input{
+width: 300px;
+height: 50px;
+
+padding: 8px 20px;
+
+}
+
+.banner5_btn{
+width: 90px;
+height: 50px;
+background-color: var(--primary-color);
+color: white;
+border: none;
+}
+
+.banner5_section{
+   
+}
+
+.banner5_title{
+    font-family: Noto Serif;
+font-size: 30px;
+font-weight: 700;
+color: rgb(255, 255, 255);
+}
+
+
+
+.footer_contaier{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+
+    margin: 50px 20px;
+
+    /* align-items: center; */
+}
+
+
+
+
+}
+
+
+
 @media (min-width:576px) and  (max-width:992px){
     .banner1_title{
 font-family: Noto Serif;
@@ -142,4 +627,100 @@ font-weight: 700;
 .banner1_left{
     padding-left: 10px;
 }
+
+
+.banner2_right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 20px;
+
+    
+
+}
+
+
+.banner3_section{
+    
+    
+   flex-direction: column;
+    /* width: 150px; */
+}
+
+.banner3_image img:nth-child(2){
+
+    display: none;
+}
+
+
+
+.banner3_image img:nth-child(1){
+
+    /* width: 200px;
+    height: 200px; */
+
+   
+}
+
+
+.footer_contaier{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+
+    margin: 50px 20px;
+
+    /* align-items: center; */
+}
+
+
+.part1 img{
+    width: 180px;
+
+    margin-bottom: 16px;
+    
+}
+
+.part4_social_media{
+    display: flex;
+    gap: 35px;
+}
+
+.part4_social_media img{
+    width: 36px;
+    height: 36px;
+}
+
+.part1_info{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+}
+
+.part2_navbar_list{
+    list-style: none;
+    color: var(--secondary-color);
+
+    font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+}
+
+.part2_navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.part3_navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+
+
 }
