@@ -1,3 +1,145 @@
-body{
-    background-color: aquamarine;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: Inter; */
+}
+
+img{
+    width: 100%;
+}
+
+:root {
+  --primary-color: #E95A08;   /* Blue */
+  --secondary-color: rgba(0, 0, 0, 0.5); /* Gray */
+}
+
+
+header,
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* nav section */
+.navbar_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 30px auto 120px auto;
+}
+
+.nav_items{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav_items li{
+    list-style: none;
+    
+}
+
+.nav_items a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    
+}
+
+
+.nav_item_list:nth-child(1){
+color: rgb(37, 36, 50);
+font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+}
+
+.banner1_section>*{
+    flex: 1;
+}
+.banner1_section{
+    display: flex;
+    align-items: end;
+    
+    justify-content: space-between;
+}
+
+.banner1_left{
+    border: 1px solid;
+    /* width: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.banner1_title{
+font-family: Noto Serif;
+font-size: 65px;
+font-weight: 700;
+
+/* width: 570px; */
+}
+
+.banner1_title span{
+    color: rgb(233, 90, 8);
+}
+
+.banner1_description{
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+
+/* width: 570px; */
+}
+
+.banner1_right img{
+    width: 100%;
+    border: 1px solid;
+    display: block;
+
+   
+}
+
+
+@media (max-width:576px){
+   .banner1_right img{
+    width: 100%;
+    border: 1px solid;
+    display: block;
+
+    object-fit: cover;
+}
+
+.banner1_section{
+    display: flex;
+    align-items: end;
+    flex-direction: column-reverse;
+    
+    justify-content: space-between;
+}
+
+
+}
+@media (min-width:576px) and  (max-width:992px){
+    .banner1_title{
+font-family: Noto Serif;
+font-size: 45px;
+font-weight: 700;
+
+/* width: 570px; */
+}
+
+
+.banner1_right img{
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+
+   
+}
+
+.banner1_left{
+    padding-left: 10px;
+}
 }
