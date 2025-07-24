@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     /* font-family: Inter; */
+
+    /* background: rgb(245, 248, 255); */
 }
 
 img{
@@ -37,22 +39,53 @@ main{
 
 .nav_items li{
     list-style: none;
+    /* color: var(--secondary-color); */
     
 }
 
-.nav_items a{
+.nav_items li a{
     text-decoration: none;
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
     
 }
 
 
-.nav_item_list:nth-child(1){
-color: rgb(37, 36, 50);
+.nav_items li:first-child a{
+    color: rgb(37, 36, 50);
+
 font-family: Inter;
 font-size: 16px;
 font-weight: 700;
+    
 }
+
+
+.nav_items li:nth-child(2) a,
+.nav_items li:nth-child(3) a
+{
+    color: rgb(137, 135, 161);
+
+    font-size: 16px;
+font-weight: 400;
+
+}
+
+
+.nav_items li:last-child a{
+    color: rgb(0, 0, 0);
+    /* background-color: white; */
+    font-size: 16px;
+font-weight: 400;
+}
+
+
+/* .nav_items li:last-child i{
+    color: black;
+} */
+
+
+
+
 
 .banner1_section>*{
     flex: 1;
@@ -65,7 +98,7 @@ font-weight: 700;
 }
 
 .banner1_left{
-    border: 1px solid;
+    /* border: 1px solid; */
     /* width: auto; */
     display: flex;
     flex-direction: column;
@@ -95,7 +128,7 @@ font-weight: 400;
 
 .banner1_right img{
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
     display: block;
 
    
@@ -110,7 +143,7 @@ font-weight: 400;
     /* align-items: center; */
     text-align: center;
 
-    margin-top: 120px;
+    margin-top: 70px;
     gap: 40px;
 
 }
@@ -208,10 +241,10 @@ height: 50px;
 .banner3_section{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     gap: 60px;
 
-    margin-top: 212px;
+    margin-top: 200px;
     /* width: 150px; */
 }
 
@@ -220,14 +253,16 @@ height: 50px;
 }
 
 .banner3_flowerplant{
-    /* margin-top: 3px;
+    /* margin-top: 0px;
     margin-bottom: 3px; */
 
-    border: 1px solid;
+    height: 518px;
 
-    /* display: flex;
+    /* border: 1px solid; */
+
+    display: flex;
     flex-direction: column;
-    gap: 20px; */
+    gap: 20px;
 }
 .flowerplant_title{
     color: rgb(0, 0, 0);
@@ -247,22 +282,32 @@ font-size: 22px;
 font-weight: 400;
 }
 
-/* .flowerplant_point ul li:nth-child(2){
-    margin: 20px auto;
-} */
+.flowerplant_point ul li:nth-child(2){
+    margin: 25px auto;
+}
 
 .banner3_image{
     position: relative;
 }
 .banner3_image img:nth-child(2){
 
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
+
+    
+
+    /* object-fit: cover;
+    border-radius: 50%; */
+
+    /* box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25); */
+    /*  */
+
+    /* background: url(trusted-badge); */
 
     position: absolute;
     top: -100px;
     right: -82px;
-    z-index: 20;
+    z-index: 10;
 
     animation: spin 3s linear infinite;
 
@@ -285,7 +330,7 @@ font-weight: 400;
 
 .banner4_info{
     text-align: center;
-    margin-bottom: 121px;
+    margin-bottom: 117px;
 
 }
 
@@ -299,7 +344,7 @@ font-family: Noto Serif;
 font-size: 50px;
 font-weight: 700;
 
-margin-bottom: 16px;
+margin-bottom: 21px;
 }
 
 .banner4_description{
@@ -308,8 +353,8 @@ color: rgba(0, 0, 0, 0.5);
 font-family: Inter;
 font-size: 22px;
 font-weight: 400;
-border: 1px solid;
-/* width: 880px; */
+/* border: 1px solid; */
+
 
 /* margin: 0px px; */
 }
@@ -327,11 +372,11 @@ border: 1px solid;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
 
 .banner4_image1{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(./assets/deal-bloom.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.6)), url(./assets/deal-bloom.png);
     /* background-color: rgba(0, 0, 0, 0.4); */
     text-align: center;
     color: white;
@@ -359,14 +404,16 @@ font-weight: 700;
 margin-bottom: 18px;
 }
 
-banner4_image_shopnow{
+.banner4_image_shopnow{
 font-family: Inter;
 font-size: 16px;
 font-weight: 600;
+
+border-bottom: 2px solid white;
 }
 
 .banner4_image2{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(./assets/deal-ana.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.302), rgba(0, 0, 0, 0.6)), url(./assets/deal-ana.png);
     text-align: center;
     color: white;
 
@@ -388,7 +435,7 @@ font-weight: 600;
 }
 
 .banner4_image_container2{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url(./assets/deal-zabo.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.263), rgba(0, 0, 0, 0.6)), url(./assets/deal-zabo.png);
     width: 100%;
 
     background-repeat: no-repeat;
@@ -400,8 +447,22 @@ font-weight: 600;
     align-items: center;
     color: white;
 
-    height: 512px;
+    height: 528px;
     
+}
+
+.banner4_image_shopnow2{
+    border-bottom: 2px solid white;
+
+font-family: Inter;
+font-size: 28px;
+font-weight: 600;
+}
+
+.banner4_image_title2{
+font-family: Noto Serif;
+font-size: 40px;
+font-weight: 700;
 }
 
 
@@ -411,6 +472,8 @@ font-weight: 600;
     height: 533px;
     background-repeat: no-repeat;
     background-size: cover;
+
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -434,6 +497,10 @@ height: 50px;
 
 padding: 8px 20px;
 
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+
+
 }
 
 .banner5_btn{
@@ -442,6 +509,16 @@ height: 50px;
 background-color: var(--primary-color);
 color: white;
 border: none;
+
+font-family: Inter;
+/* font-size: 16px; */
+/* font-weight: 400; */
+
+margin-left: -5px;
+}
+
+.banner5_btn:hover{
+    cursor: pointer;
 }
 
 
@@ -449,28 +526,54 @@ border: none;
     display: grid;
     /* flex-direction: row; */
     grid-template-columns: repeat(4, 1fr);
-    gap: 110px;
+    gap: 50px;
 
-    margin: 50px 160px;
+    
+
+    margin: 50px 35px;
+
+    /* border: 1px solid; */
 
     /* align-items: center; */
 }
 
+
+
 .part1 img{
-    width: 135px;
+    width: 100px;
 
     margin-bottom: 16px;
     
 }
 
+.part1{
+    /* border: 1px solid; */
+}
+
+.part2_navbar{
+    /* border: 1px solid; */
+    width: 85px;
+}
+
+.part3_navbar{
+    /* border: 1px solid; */
+    width: 128px;
+}
+
 .part4_social_media{
     display: flex;
-    gap: 35px;
+    gap: 30px;
+    /* justify-content: end; */
+
+    
+    /* border: 1px solid; */
 }
 
 .part4_social_media img{
     width: 36px;
     height: 36px;
+
+    cursor: pointer;
 }
 
 .part1_info{
@@ -478,6 +581,8 @@ border: none;
 font-family: Inter;
 font-size: 22px;
 font-weight: 400;
+
+
 }
 
 .part2_navbar_list{
@@ -527,10 +632,27 @@ font-weight: 400;
 }
 
 
+.navbar_section{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    align-items: center;
+}
+
+.nav_logo{
+    width: 93px; 
+    
+}
+
+
+.nav_item_list:nth-child(4){
+    /* font-size: 100px; */
+}
+
 
    .banner1_right img{
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
     display: block;
 
     object-fit: cover;
@@ -542,6 +664,23 @@ font-weight: 400;
     flex-direction: column-reverse;
     
     justify-content: space-between;
+    
+}
+
+.banner1_left{
+    margin: 40px 20px;
+}
+.banner1_title{
+    font-size: 30px;
+}
+
+
+
+/* banner 2 */
+
+.banner2_title{
+    font-size: 37px;
+font-weight: 700;
 }
 
 .banner2_right{
@@ -550,17 +689,28 @@ font-weight: 400;
 
     padding: 20px;
 
-    
-
 }
 
 
-
+/* banner 3 */
 .banner3_section{
     
     
    flex-direction: column;
     /* width: 150px; */
+    margin: 100px 27px;
+    
+}
+
+.flowerplant_title{
+    font-size: 35px;
+font-weight: 700;
+}
+
+.flowerplant_point{
+    font-size: 14px;
+    padding-left: 2px;
+    
 }
 
 
@@ -570,16 +720,81 @@ font-weight: 400;
 }
 
 
+
+/* banner 4 */
+.banner4{
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    gap: 40px;
+}
+
+.banner4_title{
+    font-size: 35px;
+}
+.banner4_image_container{
+    display: flex;
+    flex-direction: column;
+
+    /* margin: 0px 20px; */
+}
+
+.banner4_image_container1{
+    width: 100%;
+}
+
+.banner4_image1{
+    border: ;
+}
+
+
+.banner4_image1{
+    border-radius: 22px;
+}
+.banner4_image2{
+    border: none;
+    border-radius: 3px 2px 0 0;
+}
+
+.banner4_image_container2{
+    border-radius: 20px;
+    background-position: center;
+    height: 320px;
+
+    text-align: center;
+
+    
+    
+}
+
+.banner4_image_title2{
+    font-size: 20px;
+font-weight: 700;
+
+margin-bottom: 20px;
+}
+
+.banner4_image_shopnow2{
+    font-size: 16px;
+font-weight: 600;
+}
+
+
+
+/* banner 5 */
 .banner5_input_section input{
-width: 300px;
+width: 280px;
 height: 50px;
 
 padding: 8px 20px;
 
 }
 
+   
+
 .banner5_btn{
-width: 90px;
+width: 103px;
 height: 50px;
 background-color: var(--primary-color);
 color: white;
@@ -587,6 +802,14 @@ border: none;
 }
 
 .banner5_section{
+    
+    width: 100%;
+    height: 533px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: center;
+
    
 }
 
@@ -610,128 +833,96 @@ color: rgb(255, 255, 255);
     /* align-items: center; */
 }
 
+.part1 img{
+width: 180px;
 
+}
 
 
 }
 
 
+@media (min-width:576px) and (max-width:992px){
 
-@media (min-width:576px) and  (max-width:992px){
-    .banner1_title{
-font-family: Noto Serif;
-font-size: 45px;
-font-weight: 700;
-
-/* width: 570px; */
-}
-
-
-.banner1_right img{
-    width: 100%;
-    min-height: 400px;
-    object-fit: cover;
-
-   
-}
-
-.banner1_left{
-    padding-left: 10px;
-}
-
-
-.banner2_right{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    padding: 20px;
-
-    
-
-}
-
-
-.banner3_section{
-    
-    
-   flex-direction: column;
-    /* width: 150px; */
-}
-
-.banner3_image img:nth-child(2){
-
-    display: none;
-}
-
-
-
-.banner3_image img:nth-child(1){
-
-    /* width: 200px;
-    height: 200px; */
-
-   
-}
-
+    header, main{
+        padding: 0 20px;
+    }
 
 .footer_contaier{
-    display: grid;
+   
     /* flex-direction: row; */
-    grid-template-columns: repeat(1, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
 
-    margin: 50px 20px;
+    gap: 30px;
+
+    /* border: 1px solid; */
 
     /* align-items: center; */
 }
 
-
-.part1 img{
-    width: 180px;
-
-    margin-bottom: 16px;
-    
+.banner3_section{
+    margin-bottom: 250px;
 }
+
+
+
 
 .part4_social_media{
     display: flex;
-    gap: 35px;
+    gap: 10px;
+    /* justify-content: end; */
+flex-direction: column;
+    
+    /* border: 1px solid; */
 }
 
-.part4_social_media img{
-    width: 36px;
-    height: 36px;
+.banner5_input_section input{
+width: 200px;
+height: 50px;
+
+padding: 8px 20px;
+
+
+
 }
 
-.part1_info{
-    color: rgba(0, 0, 0, 0.5);
+.banner5_btn{
+width: 100px;
+height: 50px;
+background-color: var(--primary-color);
+color: white;
+border: none;
+
 font-family: Inter;
-font-size: 20px;
-font-weight: 400;
+/* font-size: 16px; */
+/* font-weight: 400; */
+
+margin-left: -5px;
+
 }
 
-.part2_navbar_list{
-    list-style: none;
-    color: var(--secondary-color);
 
-    font-family: Inter;
-font-size: 20px;
-font-weight: 400;
 }
 
-.part2_navbar ul{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
 
-.part3_navbar ul{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+@media (min-width:993px) and (max-width:1250px){
+
+
+    header, main{
+        padding: 0 20px;
+    }
+
 }
 
 
 
+    
+    
 
-}
+
+
+
+
+
+
