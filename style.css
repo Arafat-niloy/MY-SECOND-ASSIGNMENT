@@ -177,6 +177,10 @@ margin-bottom: 30px;
 padding: 10px;
 }
 
+.card_image img{
+height: 300px;
+object-fit: cover;
+}
 .banner2_card_items{
     text-align: center;
 
